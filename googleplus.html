@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  
+</head>
+
+<body>
+    <a href='#' onClick='login();' id="loginText"'> Click here to login </a>
+    <a href="#" style="display:none" id="logoutText" target='myIFrame' onclick="myIFrame.location='https://www.google.com/accounts/Logout'; startLogoutPolling();return false;"> Click here to logout </a>
+    <iframe name='myIFrame' id="myIFrame" style='display:none'></iframe>
+    <div id='uName'></div>
+    <img src='' id='imgHolder'/>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Stores</title>
+<link rel="stylesheet" href="css/index.css" type="text/css"
+	media="all">
+</head>
+<body>
+	<div class="loader"></div>
+	<div id="header">
+		<a href="#">Slocamo</a>
+		<div id="searchBtn" class="pointer searchBtnStyle">
+			<img alt="search" src="images/search.png">
+		</div>
+	</div>
+
+
+	<div id="searchContainer" class="">
+		<div id="searchContainerTxt">
+			<input type="text" id="searchTxt" />
+		</div>
+		<div class="pointer" id="searchContainerBtn">
+			<img alt="search" src="images/search.png">
+		</div>
+	</div>
+
+	<div id="storeFilterContainer">
+		<div id="recentBtn" class="storeBtn pointer" category="0">Recent</div>
+		<div id="nearbyBtn" class="storeBtn pointer" category="1">Nearby</div>
+		<div id="favBtn" class="storeBtn pointer" category="2">Favs</div>
+		<div id="allBtn" class="storeBtn pointer storeBtnSelected"
+			category="3">All</div>
+	</div>
+	<div id="recents-wrapper" class="stores-wrapper hide">
+		<div id="scroller">
+			<ul id="recents-storeslist" class="storeslist">
+			</ul>
+			<!--
+			<div id="recents-pullUp" class="stores-pullUp">
+				<span class="pullUpIcon"></span><span class="pullUpLabel">Pull
+					up to refresh...</span>
+			</div>
+		-->
+		</div>
+	</div>
+
+	<div id="nearby-wrapper" class="stores-wrapper hide">
+		<div id="scroller">
+			<ul id="nearby-storeslist" class="storeslist">
+			</ul>
+			<!--
+			<div id="nearby-pullUp" class="stores-pullUp">
+				<span class="pullUpIcon"></span><span class="pullUpLabel">Pull
+					up to refresh...</span>
+			</div>
+		-->
+		</div>
+	</div>
+
+	<div id="favs-wrapper" class="stores-wrapper hide">
+		<div id="scroller">
+			<ul id="favs-storeslist" class="storeslist">
+			</ul>
+			<!--
+			<div id="favs-pullUp" class="stores-pullUp">
+				<span class="pullUpIcon"></span><span class="pullUpLabel">Pull
+					up to refresh...</span>
+			</div>
+		-->
+		</div>
+	</div>
+
+	<div id="all-wrapper" class="stores-wrapper">
+		<div id="scroller">
+			<ul id="all-storeslist" class="storeslist">
+			</ul>
+			<!--
+			<div id="all-pullUp" class="stores-pullUp">
+				<span class="pullUpIcon"></span><span class="pullUpLabel">Pull
+					up to refresh...</span>
+			</div>
+		-->
+		</div>
+	</div>
+	<div id="footer">
+		<div id="homeBtn" class="footerBtn pointer"></div>
+		<div id="dealsBtn" class="footerBtn pointer"></div>
+		<div id="settingsBtn" class="footerBtn pointer"></div>
+	</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/sha1.js"></script>
+<script type="text/javascript" src="js/stores.js"></script>
+</html>

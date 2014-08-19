@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Login</title>
+
+</head>
+<link rel="stylesheet" href="css/index.css"></style>
+<body>
+<div class="loader"></div>
+<div id="fb-root"></div>
+<div id="header"><a href="#">Slocamo</a></div>
+
+<div class="slocamoCap">
+	<h4 class="">"A free Social Local Mobile App for users to rate
+				satisfaction with merchants, receive best deals from merchants and
+				share the best deals with friends"
+	</h4>
+</div>
+
+<div class="loginText">
+		<h4 class="center">
+			Login into the app by:
+		</h4>
+</div>
+
+<div class="loginBtnContainer">
+    <div id="fbContainer" class="pointer">
+        <img id="fbbtn" src="images/facebook.png"/>
+    </div>
+    
+    <div id="twitterContainer" class="pointer">
+        <img src="images/twitter.png"/>
+    </div>
+
+    <div id="googlePlusContainer" class="pointer">
+        <img src="images/googleplus.png"/>
+    </div>
+</div>
+</div>
+<!--<div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
+<input type="button" value="Logout" onclick="logout()">
+<input type="button" value="Login" onclick="login()">
+<input type="button" value="Login Status" onclick="getLoginStatus()">
+<input type="button" value="Post to Wall" onclick="postToWall()">
+<input type="button" value="Add Page Tab" onclick="addPageTab()">
+<input type="button" value="Add Friend" onclick="addFriend()">
+<input type="button" value="Send Message" onclick="sendMessage()">
+-->
+<div class="login-footer">
+    Powered by Slocamo 2013
+</div>
+
+<div class="slocamo-info">
+    i
+</div>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/facebook_index.js"></script>
+<script type="text/javascript" src="js/twitter_index.js"></script>
+<script type="text/javascript" src="js/googleplus_index.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/localStorageUtil.js"></script>
+<script type="text/javascript">
+if(LocalStorageUtil.isLocalStorageSupported() != true) {
+    alert("This website doesnot work in this browser");
+} else {
+    var session_key = LocalStorageUtil.getFromLocalStorage("session_key");
+    if(session_key != null && session_key != 'undefined' && session_key !="") {
+        window.location.href = Global.base_url+"/stores.html";
+    }
+}
+</script>
+</body>
+</html>
